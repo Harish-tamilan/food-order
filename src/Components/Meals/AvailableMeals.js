@@ -36,11 +36,11 @@ const AvailableMeals = ()=>{
         <div className={classes.meals}>
             <Card>
               <ul>
-                {DUMMY_MEALS.map((meal)=>{
-                  {return(<MealItem meal={meal}/>);}
+                {DUMMY_MEALS.map((meal,key)=>{
+                  {return(<MealItem id= {meal.id} meal={meal}/>);}
                 })}
               </ul>
-            </Card>
+            </Card>        
         </div>
     );
 }
